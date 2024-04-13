@@ -58,7 +58,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def main() -> None:
     """Start the bot."""
-    application = Application.builder().token("6940594158:AAF7Lp-uFV1UuBeMHKmWwkecBsHvx2CQC_0").build()
+    application = Application.builder().token("token").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
@@ -73,4 +73,3 @@ if __name__ == "__main__":
 
 
 
-#Token: 6940594158:AAF7Lp-uFV1UuBeMHKmWwkecBsHvx2CQC_0
